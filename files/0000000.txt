@@ -1,0 +1,6 @@
+Sarah Johnson
+
+Date of birth: 2000
+Major: Computer Science
+GPA: 3.8
+Extracurricular Activities: President of the Coding Club, participated in hackathons.

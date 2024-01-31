@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+<center>
+    <h1>Enter student ID:</h1>
+    <p>Enter the student ID to access the student data file.</p>
+    <p>There are currently students in the database with an ID of 0000000-0000003</p>
+    <p>ID must have 7 digits.</p>
+    <% if (locals && locals.error) { %>
+        <p style="color: red;"><%= locals.error %></p>
+    <% } %>
+
+    <form action="/form" method="post">
+        <label for="filename">ID: </label>
+        <input type="text" id="filename" name="filename" value="<%= locals && locals.formData ? locals.formData.filename : '' %>" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</center>
+</body>
+</html>
